@@ -1,0 +1,6 @@
+bower_components
+build
+tmp
+node_modules
+NGMZDOS/config.json
+*.swp

@@ -1,0 +1,23 @@
+{
+  "name": "MZDOS",
+  "version": "0.0.0",
+  "authors": [
+    "zajca <zajca@zajca.cz>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "tmp",
+    "build",
+    "NGMZDOS/config.json"
+
+  ],
+  "dependencies": {
+    "font-awesome": "~4.0.3"
+  }
+}
