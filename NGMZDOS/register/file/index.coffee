@@ -1,3 +1,5 @@
+require "./items"
+
 m=angular.module("file",['pascalprecht.translate'])
 m.run = [
   "menuRegister"
@@ -16,17 +18,17 @@ m.config [
     $stateProvider.state("app.file.exampleSimple"
       name: "example simple"
       parent: 'app'
-      template: fs.readFileSync(__dirname + '/exampleSimple.html', 'utf8')
+      template: require "./exampleSimple.html"
     )
     $stateProvider.state("app.file.twoColumns"
       name: "two col"
       parent: 'app'
-      template: fs.readFileSync(__dirname + '/twoColumns.html', 'utf8')
+      template: require "./twoColumns.html"
     )
     $stateProvider.state("app.file.dialog"
       name: "dialog"
       parent: 'app'
-      template: fs.readFileSync(__dirname + '/dialog.html', 'utf8')
+      template: require "./dialog.html"
     )
 ]
 

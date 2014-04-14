@@ -25,6 +25,7 @@ libnotify = require('libnotify')
 browserify = require('gulp-browserify')
 toml = require('gulp-toml')
 json = JSON.stringify
+stringify = require('stringify')
 
 modules=[
   "vendor/angular/angular.js",
@@ -164,7 +165,7 @@ gulp.task 'COFFEE', ["parseConfig"],->
   .pipe(browserify({
     debug: !prod
     insertGlobals : true,
-    transform: ['coffeeify', 'brfs','envify']
+    transform: ['coffeeify', 'brfs','envify','stringify']
     extensions: ['.coffee'],
     shim:
       angular:
